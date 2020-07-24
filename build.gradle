@@ -26,3 +26,13 @@ test {
 	useJUnitPlatform()
 }
 
+plugins {
+  id "org.sonarqube" version "2.7"
+}
+
+./gradlew sonarqube \
+  -Dsonar.projectKey=co.com.ceiba:inventariobodega.juan.mendez \
+  -Dsonar.host.url=https://sonar.ceiba.com.co \
+  -Dsonar.login=b8ba9818dc4a8cf528a9a9176a396dd57c9ce3ca
+
+
