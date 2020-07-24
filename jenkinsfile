@@ -1,5 +1,5 @@
 pipeline {
-  //Donde se va a ejecutar el Pipeline
+   //Donde se va a ejecutar el Pipeline
   agent {
     label 'inventariobodega'
   }
@@ -39,7 +39,7 @@ pipeline {
     stage('Compile & Unit Tests') {
       steps{
         echo "------------>Unit Tests<------------"
-			sh 'gradle --b ./build.gradle test'
+		sh 'gradle --b ./build.gradle test'
       }
     }
 
