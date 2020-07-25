@@ -26,9 +26,11 @@ test {
 	useJUnitPlatform()
 }
 
+
 plugins {
   id "org.sonarqube" version "2.7"
 }
+
 
 ./gradlew sonarqube \
   -Dsonar.projectKey=co.com.ceiba:inventariobodega.juan.mendez \
